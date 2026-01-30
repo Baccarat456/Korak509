@@ -1,0 +1,24 @@
+{
+    "title": "Input schema of the Restaurant Menu & Price Index scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "URLs to start crawling from (restaurant homepages, menu pages, or directory pages).",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://crawlee.dev"
+                }
+            ]
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of requests that can be made by this crawler.",
+            "default": 200
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": ["restaurant_name", "item_name", "category", "price", "currency", "description", "url"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "restaurant_name": {
+                        "label": "Restaurant",
+                        "format": "text"
+                    },
+                    "item_name": {
+                        "label": "Menu item",
+                        "format": "text"
+                    },
+                    "category": {
+                        "label": "Category",
+                        "format": "text"
+                    },
+                    "price": {
+                        "label": "Price",
+                        "format": "text"
+                    },
+                    "currency": {
+                        "label": "Currency",
+                        "format": "text"
+                    },
+                    "description": {
+                        "label": "Description",
+                        "format": "text"
+                    },
+                    "url": {
+                        "label": "URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
